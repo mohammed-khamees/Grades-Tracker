@@ -1,0 +1,146 @@
+/* global */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('img/school.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.hide {
+	display: none;
+}
+
+/* header */
+header {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+}
+/* end of header */
+
+/* main */
+main {
+	margin: 8rem auto;
+	margin-top: 5rem;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+/* form */
+form {
+	flex: 0 0 calc(30% - 1rem);
+	height: 20rem;
+	background-color: rgba(139, 132, 217, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+input {
+	width: 70%;
+	padding: 0.5rem 0;
+}
+
+select {
+	width: 70%;
+	padding: 0.5rem 0;
+}
+
+label {
+	font-size: 1.2rem;
+}
+
+/* end of form */
+
+/* results container */
+.result {
+	padding: 2rem 0;
+	flex: 0 0 calc(60% - 1rem);
+	background-color: rgba(139, 132, 217, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	padding: 0.3rem 3rem;
+	border: 1px solid white;
+	color: white;
+}
+
+th {
+	background-color: black;
+}
+
+td {
+	background-color: rgb(80, 80, 80);
+}
+
+.btn {
+	color: white;
+	background-color: black;
+	padding: 0.5rem 3rem;
+	border: 2px solid black;
+	transition: all 0.3s ease-in-out;
+	font-weight: bold;
+	border-radius: 0.5rem;
+}
+
+.btn:hover {
+	color: black;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.clear {
+	margin-top: 2rem;
+}
+
+#submit {
+	color: white;
+	background-color: black;
+	padding: 0.5rem 3rem;
+	border: 2px solid black;
+	transition: all 0.3s ease-in-out;
+	font-weight: bold;
+	border-radius: 0.5rem;
+}
+
+#submit:hover {
+	color: black;
+	background-color: transparent;
+	cursor: pointer;
+}
+/* end of results container */
+
+/* end of main */
