@@ -125,22 +125,6 @@ td {
 .clear {
 	margin-top: 2rem;
 }
-
-#submit {
-	color: white;
-	background-color: black;
-	padding: 0.5rem 3rem;
-	border: 2px solid black;
-	transition: all 0.3s ease-in-out;
-	font-weight: bold;
-	border-radius: 0.5rem;
-}
-
-#submit:hover {
-	color: black;
-	background-color: transparent;
-	cursor: pointer;
-}
 /* end of results container */
 
 /* end of main */

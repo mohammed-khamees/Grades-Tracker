@@ -5,6 +5,7 @@ const table = document.getElementById('table');
 
 const clearBtn = document.querySelector('.clear');
 
+//constructor function
 function Student(name, course) {
 	this.name = name;
 	this.course = course;
@@ -22,6 +23,7 @@ if (localStorage.getItem('students')) {
 	clearBtn.classList.add('hide');
 }
 
+//student Creater
 form.addEventListener('submit', addStudent);
 
 function addStudent(e) {
@@ -40,6 +42,8 @@ function addStudent(e) {
 		'students',
 		JSON.stringify(Student.prototype.allStudents),
 	);
+
+	e.target.name.value = '';
 }
 
 // table creaters functions
@@ -99,7 +103,6 @@ function genrateGrades() {
 }
 
 //clear btn
-
 clearBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	table.innerHTML = '';
