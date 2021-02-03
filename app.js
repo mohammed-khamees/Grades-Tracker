@@ -3,7 +3,7 @@
 const form = document.getElementById('form');
 const table = document.getElementById('table');
 
-const clear = document.querySelector('.clear');
+const clearBtn = document.querySelector('.clear');
 
 function Student(name, course) {
 	this.name = name;
@@ -19,7 +19,7 @@ if (localStorage.getItem('students')) {
 	tableHeader();
 	studentData();
 } else {
-	clear.classList.add('hide');
+	clearBtn.classList.add('hide');
 }
 
 form.addEventListener('submit', addStudent);
@@ -34,7 +34,7 @@ function addStudent(e) {
 	tableHeader();
 	studentData();
 
-	clear.classList.remove('hide');
+	clearBtn.classList.remove('hide');
 
 	localStorage.setItem(
 		'students',
@@ -99,11 +99,11 @@ function genrateGrades() {
 }
 
 //clear btn
-const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', (e) => {
+clearBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	table.innerHTML = '';
 	localStorage.removeItem('students');
 	Student.prototype.allStudents = [];
+	clearBtn.classList.add('hide');
 });
